@@ -1,0 +1,89 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #333;
+    background-color: #f5f7fa;
+}
+
+h1 {
+    padding: 20px;
+    color: #1d5f91;
+}
+
+/* Thanh điều hướng */
+nav {
+    padding: 15px;
+    background-color: #333;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px 15px;
+    padding: 8px 12px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #168bd0;
+    border-radius: 4px;
+}
+
+/* Ba cột nội dung */
+section {
+    margin: 25px auto;
+    max-width: 1000px;
+    font-size: 0;
+}
+
+.box {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    max-width: 300px;
+    min-height: 180px;
+    margin: 1%;
+    padding: 20px;
+    font-size: 16px;
+    background-color: lightblue;
+    border: 1px solid #7bb8d4;
+    border-radius: 8px;
+}
+
+.box h2 {
+    color: #15549a;
+}
+
+.box p {
+    line-height: 1.6;
+}
+
+/* Chân trang */
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    color: white;
+    background-color: #333;
+}
+
+/* Hiển thị trên màn hình nhỏ */
+@media (max-width: 600px) {
+    .box {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+}
