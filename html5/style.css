@@ -1,0 +1,148 @@
+
+/* Thiết lập chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f2f5;
+}
+
+/* Header */
+header {
+    padding: 25px;
+    text-align: center;
+    color: white;
+    background-color: #1769aa;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Thanh điều hướng */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #23415c;
+}
+
+nav a {
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #168bd0;
+}
+
+/* Khu vực nội dung */
+.layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Nội dung chính */
+section {
+    flex: 3;
+    min-width: 0;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #1769aa;
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8fafc;
+    border-left: 4px solid #168bd0;
+}
+
+article h3 {
+    margin-top: 0;
+    color: #23415c;
+}
+
+article a,
+aside a {
+    color: #1769aa;
+}
+
+article a:hover,
+aside a:hover {
+    color: #e07818;
+}
+
+/* Thanh bên */
+aside {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: #e2edf7;
+    border: 1px solid #cbdceb;
+}
+
+aside h2 {
+    margin-top: 0;
+    color: #1769aa;
+    font-size: 20px;
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #23415c;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 700px) {
+    body {
+        padding: 8px;
+    }
+
+    .layout {
+        flex-direction: column;
+    }
+
+    section,
+    aside {
+        width: 100%;
+        min-width: 0;
+    }
+
+    nav a {
+        padding: 12px;
+    }
+}
